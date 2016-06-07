@@ -50,6 +50,13 @@
          </div>
        </div>
 
+       <div class="failure col-sm-12 jumbotron" ng-if="!validListings && submitted">
+         <h1>Oops</h1>
+         <p>
+           There are no valid results for what you seleced. Change some settings and try again!
+         </p>
+       </div>
+
        <div class="listDiv col-sm-3" ng-if="submitted">
          <div class="categoryListing" ng-repeat="listing in categoryListings">
            <div class="listName">
