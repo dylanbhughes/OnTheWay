@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/main.css" media="screen" title="no title" charset="utf-8">
     <script src="app.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>bae-synchronous</title>
+    <title>OnTheWay</title>
    </head>
    <body>
      <div ng-app="bae-synchronous" ng-controller="MainController" class='mainContainer'>
@@ -22,8 +22,8 @@
          <form class="" class="mainForm">
            <span style="padding: 10px;" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 
-           <input type="text" id='homeAddress'  ng-model='homeAddress' name="address1" placeholder="enter home address">
-           <input type="text" id='workAddress'  ng-model='workAddress' name="address2" placeholder="enter work address">
+           <input type="text" id='homeAddress'  ng-model='homeAddress' name="address1" placeholder="Enter Origin Address">
+           <input type="text" id='workAddress'  ng-model='workAddress' name="address2" placeholder="Enter Destination Address">
            <span>Category: </span>
            <select class='location' ng-required='!selectedPlace' ng-model='selectedPlace'>
              <option ng-repeat='place in places'>{{place}}</option>
@@ -39,8 +39,15 @@
          </form>
        </div>
 
-       <div class="pictureDiv" ng-if="!submitted">
-         <img src="./clocks.jpg" alt="" />
+       <div class="splash jumbotron" ng-if="!submitted">
+         <div class="container">
+           <h1>On The Way</h1>
+           <div>
+             <p>Need to find a gym that's on your way home? Need a coffeeshop that's en route to your interview? Look no further, friend!</p>
+             <p>Start by entering starting and ending addresses in the boxs above. Then, choose a category and a maximum travel time from the dropdowns. On The Way will find locations that fall within a chosen category that fall within a radius (determined by estimated travel time) of the optimal route between your starting and ending locations.</p>
+             <p>Go ahead, give it a shot!</p>
+           </div>
+         </div>
        </div>
 
        <div class="listDiv col-sm-3" ng-if="submitted">

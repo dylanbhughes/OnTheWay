@@ -1,5 +1,5 @@
-html {
-  overflow-x: hidden;
+a {
+  text-decoration: none;
 }
 
 body {
@@ -7,72 +7,9 @@ body {
   padding: 0px;
   width: 100%;
   margin: 0px;
-  background: #606c88; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #606c88 , #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-a {
-  text-decoration: none;
-}
-
-input {
-  width: 250px;
-}
-
-.location {
-  padding: 10px;
-}
-
-.time {
-  padding: 10px;
-}
-
-.mainContainer {
-  width: 100%;
-}
-
-.formSubmitButton {
-  display: inline-block;
-  background-color: orange;
-}
-
-.formSubmitButton:hover {
-  display: inline-block;
-  background-color: yellow;
-  color: black;
-}
-
-.formDiv {
-  padding: 10px;
-}
-
-.formDiv span {
-  color: white;
-}
-
-.listDiv {
-  padding: 15px;
-  color: white;
-  height: 730px;
-  max-height: 730px;
-  padding-top: 15px;
-  overflow-y: scroll;;
-}
-
-.mapDiv {
-  height: auto;
-  padding: 15px;
-}
-
-.mainForm {
-  display: inline-block;
-}
-
-#map {
-  width: 100%;
-  height: 715px;
+  background: #2589BD; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #187795, #2589BD); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #187795, #2589BD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .categoryListing div {
@@ -86,10 +23,77 @@ input {
   border-radius: 5px;
 }
 
+.categoryTitle {
+  color: orange;
+}
+
+.formSubmitButton {
+  display: inline-block;
+  background-color: #187795;
+}
+
+.formSubmitButton:hover {
+  display: inline-block;
+  background-color: #BD5925;
+  color: black;
+}
+
+.formDiv {
+  padding: 10px;
+}
+
+.formDiv span {
+  color: white;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+input {
+  width: 250px;
+}
+
+.listDiv {
+  padding: 15px;
+  color: white;
+  height: 730px;
+  max-height: 730px;
+  padding-top: 15px;
+  overflow-y: scroll;;
+}
+
+.location {
+  padding: 10px;
+}
+
+.mainContainer {
+  width: 100%;
+}
+
+.mainForm {
+  display: inline-block;
+}
+
+#map {
+  width: 100%;
+  height: 715px;
+}
+
+.mapDiv {
+  height: auto;
+  padding: 15px;
+}
+
 .pictureDiv img {
   width: 100%;
 }
 
-.categoryTitle {
-  color: orange;
+.splash {
+  color: black;
+  background-color: white;
+}
+
+.time {
+  padding: 10px;
 }
