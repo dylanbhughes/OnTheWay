@@ -7,9 +7,9 @@ body {
   padding: 0px;
   width: 100%;
   margin: 0px;
-  background: #2589BD; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #187795, #2589BD); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #187795, #2589BD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #606c88; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #606c88 , #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .categoryListing div {
@@ -29,12 +29,12 @@ body {
 
 .formSubmitButton {
   display: inline-block;
-  background-color: #187795;
+  background-color: orange;
 }
 
 .formSubmitButton:hover {
   display: inline-block;
-  background-color: #BD5925;
+  background-color: white;
   color: black;
 }
 
